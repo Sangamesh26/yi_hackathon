@@ -22,6 +22,9 @@ from email.mime.text import MIMEText
 import socket
 import dns.resolver
 
+import nltk
+nltk.data.path.append('nltk_data')
+
 app = Flask(__name__)
 
 @app.route('/')
